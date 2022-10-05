@@ -5,12 +5,39 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Current File",
+      "name": "Python: Sockets Server",
       "type": "python",
       "request": "launch",
-      "program": "${file}",
+      "program": "sockets-server.py",
       "console": "integratedTerminal",
       "justMyCode": true
-    }
+    },
+    {
+      "name": "Python: WSGI Pyramid",
+      "type": "python",
+      "request": "launch",
+      "program": "wsgi-server.py",
+      "args": ["wsgi-pyramid:app"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: WSGI Flask",
+      "type": "python",
+      "request": "launch",
+      "program": "wsgi-server.py",
+      "args": ["wsgi-flask:app"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: WSGI Vanilla",
+      "type": "python",
+      "request": "launch",
+      "program": "wsgi-server.py",
+      "args": ["wsgi-vanilla:app"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
   ]
 }
